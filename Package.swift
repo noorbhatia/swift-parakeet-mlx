@@ -6,7 +6,7 @@ let package = Package(
     name: "ParakeetMLX",
     platforms: [
         .macOS(.v14),
-        .iOS(.v16),
+        .iOS(.v18),
     ],
     products: [
         .library(
@@ -19,8 +19,8 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/ml-explore/mlx-swift", from: "0.25.3"),
-        .package(url: "https://github.com/huggingface/swift-transformers", from: "0.1.17"),
+        .package(url: "https://github.com/ml-explore/mlx-swift", branch: "main"),
+        .package(url: "https://github.com/huggingface/swift-transformers", branch: "main"),
     ],
     targets: [
         .target(
