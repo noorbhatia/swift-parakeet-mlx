@@ -555,7 +555,7 @@ public class RelPositionMultiHeadLocalAttention: RelPositionMultiHeadAttention {
             // out[b, s_p, h, d]
             uint O_S_stride = D_v * H;
             uint O_B_stride = S_p * O_S_stride;
-    
+
             uint stick_p_v_idx = S_v - S_p + s_p_idx;
             // stick to right (assuming S_v >= S_p)
 
